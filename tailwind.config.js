@@ -18,8 +18,31 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                fugaz: ['Fugaz One', ...defaultTheme.fontFamily.sans],
+                sans: [
+                    'Figtree',
+                    ...defaultTheme.fontFamily.sans
+                ],
             },
+            colors: {
+                neutral: {
+                    0: '#fffdff',
+                    50: '#fff8f7',
+                    100: '#ffedeb',
+                    200: '#f4dddb',
+                    300: '#d8c1c0',
+                    350: '#bba6a5',
+                    400: '#a08c8b',
+                    450: '#857372',
+                    500: '#6b5a59',
+                    600: '#5f4f4d',
+                    650: '#534342',
+                    700: '#473837',
+                    750: '#3b2d2c',
+                    800: '#251918',
+                    900: '#000000'
+                },
+            }
         },
     },
 
