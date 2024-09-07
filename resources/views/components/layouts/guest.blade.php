@@ -6,6 +6,8 @@
 
         <title>{{ $title ?? 'Short Access Page' }}</title>
 
+        <wireui:scripts />
+
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body>
