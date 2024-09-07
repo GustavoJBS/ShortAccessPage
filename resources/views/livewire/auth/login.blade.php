@@ -1,10 +1,6 @@
 <div x-cloak>
     <div>
-        {{-- <x-logo class="m-auto w-60 h-8" /> --}}
-
-        <h1 class="font-fugaz text-3xl text-center my-0 text-neutral-700">
-            Short Access Page
-        </h1>
+        <x-ui.logo />
 
         <h2 class="mt-3 text-2xl font-extrabold text-center text-neutral-700 leading-9">
             Sign in to your account
