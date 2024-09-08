@@ -1,14 +1,19 @@
 <?php
 
+use App\Http\Controllers\LogoutController;
 use App\Livewire\Auth\Login;
 use App\Livewire\Auth\Register;
 use App\Livewire\Home;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
+
+Route::get('logout', [LogoutController::class, 'logout'])->name('logout');
 
 Route::group(['middleware' => ['guest']], function () {
-    Route::get('/login', Login::class)->name('login');
+    Route::get('login', Login::class)->name('login');
     
-    Route::get('/register', Register::class)->name('register');
+    Route::get('register', Register::class)->name('register');
 });
 
 Route::group(['middleware' => ['auth']], function () {

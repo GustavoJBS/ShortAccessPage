@@ -17,4 +17,13 @@
             </x-ui.navbar.button>
         @endforeach
     </div>
+
+    <x-button
+        icon="arrow-left"
+        outline
+        color="white"
+        label="Logout"
+        class="ml-auto"
+        :href="route('logout')"
+    />
 </div>
