@@ -10,7 +10,10 @@
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body>
-        {{ $slot }}
+
+    <body
+        class="flex flex-col h-screen relative overflow-hidden"
+    >
+        <x-ui.navbar />
     </body>
 </html>
